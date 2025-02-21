@@ -10,7 +10,7 @@ import CourseAccordionBar from "../components/core/Course/CourseAccordionBar";
 import CourseDetailsCard from "../components/core/Course/CourseDetailsCard";
 import { formatDate } from "../services/formatDate";
 import { fetchCourseDetails } from "../services/operations/courseDetailsAPI";
-import { buyCourse } from "../services/operations/studentFeaturesAPI";
+// import { buyCourse } from "../services/operations/studentFeaturesAPI";
 import GetAvgRating from "../utils/avgRating";
 import Error from "./Error";
 
@@ -96,22 +96,21 @@ function CourseDetails() {
   } = response.data?.courseDetails;
 
   const handleBuyCourse = () => {
-    if (token) {
-      buyCourse(token, [courseId], user, navigate, dispatch);
-      return;
-    }
-    setConfirmationModal({
-      text1: "You are not logged in!",
-      text2: "Please login to Purchase Course.",
-      btn1Text: "Login",
-      btn2Text: "Cancel",
-      btn1Handler: () => navigate("/login"),
-      btn2Handler: () => setConfirmationModal(null),
-    });
+    // if (token) {
+    //   buyCourse(token, [courseId], user, navigate, dispatch);
+    //   return;
+    // }
+    // setConfirmationModal({
+    //   text1: "You are not logged in!",
+    //   text2: "Please login to Purchase Course.",
+    //   btn1Text: "Login",
+    //   btn2Text: "Cancel",
+    //   btn1Handler: () => navigate("/login"),
+    //   btn2Handler: () => setConfirmationModal(null),
+    // });
   };
 
   if (paymentLoading) {
-    // console.log("payment loading"); 
     return (
       <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
         <div className="spinner"></div>
@@ -184,7 +183,7 @@ function CourseDetails() {
           </div>
         </div>
       </div>
-      
+
       <div className="mx-auto box-content px-4 text-start text-richblack-5 lg:w-[1260px]">
         <div className="mx-auto max-w-maxContentTab lg:mx-0 xl:max-w-[810px]">
           {/* What will you learn section */}

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import IconBtn from "../../../common/IconBtn";
-import { buyCourse } from "../../../../services/operations/studentFeaturesAPI";
+// import { buyCourse } from "../../../../services/operations/studentFeaturesAPI";
 import toast from "react-hot-toast";
 
 export default function RenderTotalAmount() {
@@ -13,12 +13,12 @@ export default function RenderTotalAmount() {
 
   const handleBuyNow = async () => {
     // console.log("buying Course");
-    try {
-      await buyCourse(token, cart, dispatch);
-    } catch (error) {
-      console.error("Failed to buy course:", error);
-      toast.error("Failed to complete purchase. Please try again.");
-    }
+    // try {
+    //   await buyCourse(token, cart, dispatch);
+    // } catch (error) {
+    //   console.error("Failed to buy course:", error);
+    //   toast.error("Failed to complete purchase. Please try again.");
+    // }
   };
 
   return (
