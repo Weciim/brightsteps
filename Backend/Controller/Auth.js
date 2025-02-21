@@ -11,7 +11,6 @@ require('dotenv').config();
 // Send OTP
 exports.sendOtp = async (req, res) => {
     try {
-        console.log("first");
         const { email } = req.body;
 
         if (!email) {

@@ -4,7 +4,7 @@ const userRoute = require("./routes/userRoute");
 const profileRoute = require("./routes/profile");
 const courseRoute = require("./routes/course");
 const conatctRoute = require("./routes/contact");
-const paymentRoutes = require("./routes/payment");
+// const paymentRoutes = require("./routes/payment");
 
 const cookieParser = require("cookie-parser");
 const dbConnection = require("./config/database");
@@ -42,7 +42,7 @@ app.use("/api/v1/auth", userRoute);
 app.use("/api/v1/profile", profileRoute);
 app.use("/api/v1/course", courseRoute);
 app.use("/api/v1/reach", conatctRoute);
-app.use("/api/v1/payment", paymentRoutes);
+// app.use("/api/v1/payment", paymentRoutes);
 
 app.get("/", (req, res) => {
   res.send(`Your Server Is Up and Running `);
