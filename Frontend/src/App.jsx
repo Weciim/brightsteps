@@ -32,6 +32,7 @@ import EditCourse from "./components/core/DashBoard/EditCourse/EditCourse";
 import MyInstructors from "./components/core/DashBoard/AdminDashboard/MyInstructors";
 import AddCourseCategory from "./components/core/DashBoard/AdminDashboard/AddCourseCategory";
 import AdminDashboard from "./components/core/DashBoard/AdminDashboard/AdminDashboard";
+import ChatbotPage from "./pages/Chatbot"; // Import the Chatbot page
 
 function App() {
   const { user } = useSelector((state) => state.profile);
@@ -103,6 +104,7 @@ function App() {
             />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/chatbot" element={<ChatbotPage />} /> {/* Add the Chatbot route */}
             <Route
               element={
                 <PrivateRoute>

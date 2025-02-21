@@ -1,5 +1,5 @@
 import { Link, matchPath, useLocation } from "react-router-dom";
-import Logo from "../../assets/Logo/brainwave-academy-logo-white-transparent.png";
+import Logo from "../../assets/Logo/logo.png";
 import { NavbarLinks } from "../../data/navbar-links";
 import { useSelector } from "react-redux";
 import { ACCOUNT_TYPE } from "../../utils/constant";
@@ -62,7 +62,7 @@ function Navbar() {
     <div>
       <div className="h-14 mx-auto flex flex-row justify-evenly lg:p-0 p-2 items-center border-b-[1px] border-b-richblack-700 transition-all duration-200">
         <Link to={"/"}>
-          <img src={Logo} alt="Logo" height={50} width={190} loading="lazy" />
+          <img src={Logo} alt="Logo" height={5} width={120} loading="lazy" />
         </Link>
 
         <nav>
