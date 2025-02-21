@@ -1,13 +1,13 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import Logo from "../../assets/Logo/brainwave-academy-logo-white-transparent.png";
+import Logo from "../../assets/Logo/logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 px-4 md:px-8 bottom-0">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <div className="flex flex-col flex-shrink-0">
-          <img src={Logo} alt="Footer Logo" className="w-[190px] h-auto mb-4" />
+          <img src={Logo} alt="Footer Logo" className="w-[190px] mb-4" />
           <p className="text-sm">
             &copy; 2024 Brainwave Academy. All rights reserved.
           </p>
