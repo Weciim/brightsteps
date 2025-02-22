@@ -56,3 +56,6 @@ BrightSteps Academy is a full-stack MERN (MongoDB, Express, React, Node.js) web 
    ```
 
 
+6. For the SignLanguage Model here is a link to its github repo : https://github.com/ihebbettaibe/haaaaaaaaaand
+
+
