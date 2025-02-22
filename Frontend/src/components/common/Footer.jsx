@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col flex-shrink-0">
           <img src={Logo} alt="Footer Logo" className="w-[190px] mb-4" />
           <p className="text-sm">
-            &copy; 2024 Brainwave Academy. All rights reserved.
+            &copy; 2024 BrightSteps Academy. All rights reserved.
           </p>
         </div>
         <div className="flex flex-col flex-grow md:flex-row md:justify-center md:items-center gap-4">

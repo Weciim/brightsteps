@@ -6,34 +6,34 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What types of courses do you offer?",
+      question: "What is BrightSteps?",
       answer:
-        "We offer a wide range of courses including programming, data science, digital marketing, design, and more. Our courses are designed to cater to different skill levels, from beginners to advanced professionals.",
+        "BrightSteps is an inclusive educational platform designed to support children with special needs through personalized learning, AI-powered assistance, and accessible resources.",
     },
     {
-      question: "How can I enroll in a course?",
+      question: "How does BrightSteps help children with special needs?",
       answer:
-        "To enroll in a course, simply browse our course catalog, select the course you’re interested in, and click on the 'Enroll Now' button. You’ll be guided through the enrollment process.",
+        "Our platform provides tailored lessons, interactive learning tools, sign language support, and AI-based educational assistance to create an inclusive learning experience.",
     },
     {
-      question: "Do you offer certificates upon completion?",
+      question: "Is the platform free to use?",
       answer:
-        "Yes, upon successful completion of a course, you will receive a certificate that you can add to your resume or LinkedIn profile.",
+        "BrightSteps offers both free and premium educational resources. We strive to keep the core features accessible to all while offering additional support through premium plans.",
     },
     {
-      question: "Are the courses self-paced or scheduled?",
+      question: "Can parents and educators track progress?",
       answer:
-        "Most of our courses are self-paced, allowing you to learn at your own convenience. However, we also offer some instructor-led courses with scheduled sessions.",
+        "Yes! Our platform includes tools for tracking learning progress, setting goals, and receiving insights on children's educational development.",
     },
     {
-      question: "What is the cost of the courses?",
+      question: "How can I get started?",
       answer:
-        "Our courses vary in price. You can find detailed pricing information on each course page. We also offer discounts and financial aid options for eligible students.",
+        "Simply sign up on our website and explore our interactive learning materials and support features tailored to your child's needs.",
     },
     {
-      question: "Can I get a refund if I’m not satisfied with the course?",
+      question: "Is there support available?",
       answer:
-        "Yes, we offer a refund policy. If you’re not satisfied with the course, please contact our support team within the first 14 days for a full refund.",
+        "Absolutely! Our support team is always available to help. You can contact us at support@brightsteps.com for assistance.",
     },
   ];
 
@@ -42,7 +42,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className=" text-white  px-6">
+    <div className="text-white px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
           Frequently Asked Questions
@@ -61,7 +61,7 @@ const FAQ = () => {
                   <FaPlus className="text-yellow-300" />
                 )}
               </div>
-              <div className="mt-3 ">
+              <div className="mt-3">
                 {expandedIndex === index && (
                   <p className="text-base">{faq.answer}</p>
                 )}
@@ -71,9 +71,9 @@ const FAQ = () => {
         </div>
         <div className="mt-8 text-center">
           <p className="text-base">
-            Still confused? Feel free to contact us at{" "}
-            <a href="mailto:support@automatic.chat" className="text-yellow-300">
-              support@brainwaveacademy.chat
+            Still have questions? Feel free to contact us at {" "}
+            <a href="mailto:support@brightsteps.com" className="text-yellow-300">
+              support@brightsteps.com
             </a>
           </p>
         </div>

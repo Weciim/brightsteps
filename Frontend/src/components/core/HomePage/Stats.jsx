@@ -4,10 +4,10 @@ import CountUp from "react-countup";
 const Stats = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const stats = [
-    { label: "Students Enrolled", value: 4519 },
-    { label: "Courses Available", value: 120 },
-    { label: "Instructors", value: 48 },
-    { label: "Lessons Completed", value: 85204 },
+    { label: "Children Supported", value: 3200 },
+    { label: "Educational Modules", value: 85 },
+    { label: "Specialist Educators", value: 25 },
+    { label: "Lessons Completed", value: 64000 },
   ];
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Stats = () => {
   return (
     <div className="text-center w-full text-white">
       <h2 className="text-3xl font-bold mb-5 lg:mb-16">
-        Trusted by thousands of students and educators worldwide
+        Empowering children with special needs through technology
       </h2>
       <br />
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">

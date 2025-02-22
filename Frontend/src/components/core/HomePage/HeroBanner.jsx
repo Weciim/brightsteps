@@ -7,7 +7,7 @@ import Spline from "@splinetool/react-spline";
 const HeroBanner = () => {
   return (
     <motion.section
-      className="relative h-screen  w-full lg:w-fit mx-auto top-0 flex items-center justify-center overflow-hidden "
+      className="relative h-screen w-full lg:w-fit mx-auto top-0 flex items-center justify-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -20,7 +20,7 @@ const HeroBanner = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.6, duration: 2 }}
         >
-          <HighlightText text={"Welcome to Brainwave Academy"} />
+          <HighlightText text={"Welcome to BrightSteps"} />
         </motion.h1>
         <motion.p
           className="text-base md:text-lg lg:text-xl mb-8"
@@ -29,18 +29,18 @@ const HeroBanner = () => {
           transition={{ delay: 1, duration: 2 }}
         >
           <span
-            className="bg-gradient-to-b from-[#a05445] to-[#F09819] 
+            className="bg-gradient-to-b from-[#4A90E2] to-[#50BFA5] 
             text-transparent bg-clip-text font-bold"
           >
-            Learn, Grow, Succeed
+            Inclusive and accessible education for all
           </span>
         </motion.p>
         <motion.button
-          className="bg-richblack-800 hover:bg-richblack-700 text-white py-2 px-4 rounded-lg text-sm md:text-base lg:text-lg"
+          className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-lg text-sm md:text-base lg:text-lg"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Link to="/signup">Get started</Link>
+          <Link to="/signup">Join Us</Link>
         </motion.button>
       </div>
 
