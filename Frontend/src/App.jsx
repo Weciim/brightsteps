@@ -104,7 +104,7 @@ function App() {
             />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/chatbot" element={<ChatbotPage />} /> {/* Add the Chatbot route */}
+            <Route path="/chatbot" element={<ChatbotPage />} /> 
             <Route
               element={
                 <PrivateRoute>

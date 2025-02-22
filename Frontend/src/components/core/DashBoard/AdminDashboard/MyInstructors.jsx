@@ -17,7 +17,7 @@ const MyInstructors = () => {
   const fetchInstructors = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/profile/getInstructorsWithEarnings",
+        "http://localhost:5005/api/v1/profile/getInstructorsWithEarnings",
         {
           params: {
             page: 1,
@@ -40,7 +40,7 @@ const MyInstructors = () => {
     setConfirmationModal(null);
     try {
       await axios.delete(
-        `http://localhost:4000/api/v1/profile/deleteInstructor/${instructorId}`,
+        `http://localhost:5005/api/v1/profile/deleteInstructor/${instructorId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -79,7 +79,7 @@ const MyInstructors = () => {
           My Instructors
         </h1>
         <p className="text-sm lg:text-md text-richblack-200">
-          ⚡ Total Earnings: ₹{totalEarnings.toFixed(2)}
+          ⚡ Total Earnings: {totalEarnings.toFixed(2)} DT
         </p>
       </div>
 
@@ -100,13 +100,13 @@ const MyInstructors = () => {
                     {instructor.name}
                   </h3>
                   <p className="text-sm lg:text-base mb-2">
-                    Total Contribution of Instructor: ₹
-                    {instructor.totalEarnings.toFixed(2)}
+                    Total Contribution of Instructor: 
+                    {instructor.totalEarnings.toFixed(2)} DT
                   </p>
                   <ul className="ml-0 lg:ml-8 mt-2 lg:mt-4 space-y-2">
                     {instructor.courses.map((course) => (
                       <li key={course._id} className="text-sm lg:text-base">
-                        {course.name} - Earnings: ₹{course.earnings.toFixed(2)}
+                        {course.name} - Earnings: {course.earnings.toFixed(2)} DT
                       </li>
                     ))}
                   </ul>

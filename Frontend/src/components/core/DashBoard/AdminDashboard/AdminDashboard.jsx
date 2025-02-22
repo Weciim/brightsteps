@@ -17,7 +17,7 @@ const AdminDashboard = () => {
   const fetchRevenueData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/profile/revenue-trend"
+        "http://localhost:5005/api/v1/profile/revenue-trend"
       );
       setRevenueData(response.data);
     } catch (error) {
@@ -28,7 +28,7 @@ const AdminDashboard = () => {
   const fetchStudentData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/profile/students-over-time"
+        "http://localhost:5005/api/v1/profile/students-over-time"
       );
       setStudentData(response.data);
     } catch (error) {
@@ -39,7 +39,7 @@ const AdminDashboard = () => {
   const fetchTrendingCourses = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/profile/trending-courses"
+        "http://localhost:5005/api/v1/profile/trending-courses"
       );
       setTrendingCourses(response.data);
     } catch (error) {

@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonial = () => {
   const ProfilePhoto =
-    "https://res.cloudinary.com/dkbzscmmq/image/upload/v1726342601/erlmaigli2ro6bhsylxr.webp";
+    "https://media.licdn.com/dms/image/v2/D4E03AQEY5tWa50NMZw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709341037661?e=2147483647&v=beta&t=bdLOzPuEDJdtM2m6AO9aGx1dHA5VZpXln-7fYKe6cc0";
 
   return (
     <div className="text-white px-6">
@@ -16,12 +16,12 @@ const Testimonial = () => {
         <div className="flex justify-center mb-4">
           <img
             src={ProfilePhoto}
-            alt="Sarah Thompson"
+            alt="Sanaa Nidhal"
             className="rounded-full w-24 h-24 object-cover"
             loading="lazy"
           />
         </div>
-        <cite className="block text-xl font-semibold mb-2">Sarah Thompson</cite>
+        <cite className="block text-xl font-semibold mb-2">Sanaa Nidhal</cite>
         <p className="text-lg">Special Education Coordinator</p>
       </div>
     </div>

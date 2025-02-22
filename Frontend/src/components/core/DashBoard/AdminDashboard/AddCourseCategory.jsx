@@ -23,7 +23,7 @@ const AddCourseCategory = () => {
   const fetchCategories = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/course/showAllCategories",
+        "http://localhost:5005/api/v1/course/showAllCategories",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -42,7 +42,7 @@ const AddCourseCategory = () => {
     try {
       if (editingCategory) {
         await axios.put(
-          `http://localhost:4000/api/v1/course/update/${editingCategory._id}`,
+          `http://localhost:5005/api/v1/course/update/${editingCategory._id}`,
           data,
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -50,7 +50,7 @@ const AddCourseCategory = () => {
         );
       } else {
         await axios.post(
-          "http://localhost:4000/api/v1/course/createCategory",
+          "http://localhost:5005/api/v1/course/createCategory",
           data,
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -87,7 +87,7 @@ const AddCourseCategory = () => {
 
   const deleteCourse = async (categoryId, courseId) => {
     try {
-      await axios.delete(`http://localhost:4000/api/v1/course/deleteCourse`, {
+      await axios.delete(`http://localhost:5005/api/v1/course/deleteCourse`, {
         data: { categoryId, courseId },
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -102,7 +102,7 @@ const AddCourseCategory = () => {
     setConfirmationModal(null);
     try {
       await axios.delete(
-        `http://localhost:4000/api/v1/course/deleteCategory/${categoryId}`,
+        `http://localhost:5005/api/v1/course/deleteCategory/${categoryId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

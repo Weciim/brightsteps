@@ -86,7 +86,7 @@ function Instructor() {
                 <div>
                   <p className="text-lg text-richblack-200">Total Income</p>
                   <p className="text-3xl font-semibold text-richblack-50">
-                    Rs. {totalAmount}
+                     {totalAmount} DT
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ function Instructor() {
                       <div className="flex items-center space-x-2 mt-1 text-xs font-medium text-richblack-300">
                         <p>{course.studentsEnrolled.length} students</p>
                         <p>|</p>
-                        <p>Rs. {course.price}</p>
+                        <p>{course.price} DT</p>
                       </div>
                     </div>
                   </div>

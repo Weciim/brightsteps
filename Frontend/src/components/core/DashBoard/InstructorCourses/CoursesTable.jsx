@@ -106,7 +106,7 @@ function CoursesTable({ courses, setCourses }) {
                   <td className="p-2 hidden lg:table-cell">
                     {getDuration(course)}
                   </td>
-                  <td className="p-2">₹{course.price}</td>
+                  <td className="p-2">{course.price} DT</td>
                   <td className="p-2">
                     <button
                       disabled={loading}

@@ -59,7 +59,7 @@ exports.updateProfile = async (req, res) => {
 }
 
 exports.updateDisplayPicture = async (req, res) => {
-    console.log("Omkar Updating the profile picture")
+    console.log("Updating the profile picture")
     try {
         const userId = req.user.id;
         const displayPicture = req.files && req.files.displayPicture;

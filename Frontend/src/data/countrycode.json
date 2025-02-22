@@ -1,5 +1,9 @@
 [
   {
+    "country": "Tunisia",
+    "code": "+216"
+  },
+  {
     "country": "    India",
     "code": "+91 "
   },
@@ -706,10 +710,6 @@
   {
     "country": "Trinidad and Tobago",
     "code": "+1-868"
-  },
-  {
-    "country": "Tunisia",
-    "code": "+216"
   },
   {
     "country": "Turkey",

@@ -109,6 +109,28 @@ export const fetchCourseCategories = async () => {
 };
 
 // add the course details
+// export const addCourseDetails = async (data, token) => {
+//   let result = null;
+//   // console.log("data:", data);
+//   const toastId = toast.loading("Loading...");
+//   try {
+//     const response = await apiConnector("POST", CREATE_COURSE_API, data, {
+//       "Content-Type": "multipart/form-data",
+//       Authorization: `Bearer ${token}`,
+//     })("CREATE COURSE API RESPONSE............", response);
+//     if (!response?.data?.success) {
+//       throw new Error("Could Not Add Course Details");
+//     }
+//     toast.success("Course Details Added Successfully");
+//     result = response?.data?.data;
+//   } catch (error) {
+//     "CREATE COURSE API ERROR............", error;
+//     toast.error(error.message);
+//   }
+//   toast.dismiss(toastId);
+//   return result;
+// };
+// add the course details
 export const addCourseDetails = async (data, token) => {
   let result = null;
   // console.log("data:", data);
@@ -117,19 +139,24 @@ export const addCourseDetails = async (data, token) => {
     const response = await apiConnector("POST", CREATE_COURSE_API, data, {
       "Content-Type": "multipart/form-data",
       Authorization: `Bearer ${token}`,
-    })("CREATE COURSE API RESPONSE............", response);
+    });
+
+    // Log the response to ensure it's correct
+    console.log("CREATE COURSE API RESPONSE............", response);
+
     if (!response?.data?.success) {
       throw new Error("Could Not Add Course Details");
     }
     toast.success("Course Details Added Successfully");
     result = response?.data?.data;
   } catch (error) {
-    "CREATE COURSE API ERROR............", error;
+    console.error("CREATE COURSE API ERROR............", error);
     toast.error(error.message);
   }
   toast.dismiss(toastId);
   return result;
 };
+
 
 // edit the course details
 export const editCourseDetails = async (data, token) => {

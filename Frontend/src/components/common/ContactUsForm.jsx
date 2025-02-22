@@ -125,7 +125,7 @@ const ContactUsForm = () => {
               type="tel"
               name="phoneNo"
               id="phoneNo"
-              placeholder="12345 67890"
+              placeholder="+216 50 123 567"
               className="form-style w-[160px] md:w-full lg:w-full"
               {...register("phoneNo", {
                 required: {
@@ -133,7 +133,7 @@ const ContactUsForm = () => {
                   message: "Please enter your Phone Number.",
                 },
                 maxLength: { value: 12, message: "Invalid Phone Number" },
-                minLength: { value: 10, message: "Invalid Phone Number" },
+                minLength: { value: 6, message: "Invalid Phone Number" },
               })}
             />
           </div>

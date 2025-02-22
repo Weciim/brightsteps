@@ -4,9 +4,9 @@ import { FiCopy } from "react-icons/fi";
 import { AiOutlineMail, AiOutlineLock } from "react-icons/ai";
 
 const testCredentials = {
-  student: { email: "omkarkhoche3448@gmail.com", password: "Omkar123*5#" },
-  instructor: { email: "omkarkhoche0509@gmail.com", password: "Omkar123*5#" },
-  admin: { email: "omkarkhoche123@gmail.com", password: "Omkar123*5#" },
+  student: { email: "nidhalsanaa11@gmail.com", password: "123" },
+  instructor: { email: "Mohamednidhal.sanaa@supcom.tn", password: "123" },
+  admin: { email: "wassimderwich0@gmail.com", password: "test12345" },
 };
 
 const TestCredentials = () => {

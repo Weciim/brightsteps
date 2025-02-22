@@ -7,7 +7,7 @@ const contactDetails = [
   {
     title: "Chat with Us",
     description: "Our friendly team is here to help.",
-    contact: "@mail address",
+    contact: "support@brightsteps.com",
     icon: <HiMiniChatBubbleLeftRight className="w-6 h-6" />,
   },
   {
@@ -19,7 +19,7 @@ const contactDetails = [
   {
     title: "Call Us",
     description: "Mon - Fri From 8am to 5pm",
-    contact: "+123 456 7890",
+    contact: "+216 50 123 456",
     icon: <IoCall className="w-6 h-6" />,
   },
 ];

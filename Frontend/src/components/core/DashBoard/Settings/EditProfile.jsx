@@ -147,7 +147,7 @@ export default function EditProfile() {
                     message: "Please enter your Contact Number.",
                   },
                   maxLength: { value: 12, message: "Invalid Contact Number" },
-                  minLength: { value: 10, message: "Invalid Contact Number" },
+                  minLength: { value: 8, message: "Invalid Contact Number" },
                 })}
                 defaultValue={user?.additionalDetails?.contactNumber}
               />

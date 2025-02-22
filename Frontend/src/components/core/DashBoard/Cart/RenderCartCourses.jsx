@@ -68,7 +68,7 @@ export default function RenderCartCourses() {
                 </button>
               )}
               <p className="mb-6 text-3xl font-medium text-yellow-100">
-                ₹ {course?.price}
+                 {course?.price} DT
               </p>
             </div>
           </div>
