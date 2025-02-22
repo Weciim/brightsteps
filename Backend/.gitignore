@@ -1,0 +1,7 @@
+# Existing ignore for environment files
+
+
+node_modules
+dist
+dist-ssr
+*.local
